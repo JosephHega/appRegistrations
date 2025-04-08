@@ -32,4 +32,4 @@ jobs:
           az deployment group create \
             --resource-group LogicApp-RG \
             --template-file bicep/main.bicep \
-            --parameters @bicep/logicapp.parameters.json
+            --parameters @bicep/parameters.json

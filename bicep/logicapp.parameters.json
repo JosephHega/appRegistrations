@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "workflows_appRegistrations_name": {
+      "value": "appRegistrations"
+    },
+    "location": {
+      "value": "northeurope"
+    },
+    "connections_keyvault_externalid": {
+      "value": "/subscriptions/fb4e727e-f4b0-42b0-8950-8a4961a2bce9/resourceGroups/LogicApp-RG/providers/Microsoft.Web/connections/keyvault"
+    },
+    "connections_acsemail_externalid": {
+      "value": "/subscriptions/fb4e727e-f4b0-42b0-8950-8a4961a2bce9/resourceGroups/LogicApp-RG/providers/Microsoft.Web/connections/acsemail"
+    },
+    "notification_email": {
+      "value": "a.hegab1@gmail.com"
+    },
+    "azureTenantId": {
+      "value": "91962547-7671-4ed3-bd0b-2edac9992e96"
+    }
+  }
+}

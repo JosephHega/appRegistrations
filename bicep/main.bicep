@@ -1,18 +1,16 @@
-
-@description('Name of the Logic App')
-param workflows_appRegistrations_name string = 'appRegistrations'
-
 @description('Deployment location')
-param location string = 'northeurope'
-
-@description('External ID for the Key Vault connection')
-param connections_keyvault_externalid string
-
-@description('External ID for the ACS Email connection')
-param connections_acsemail_externalid string
+param location string
 
 @description('Notification recipient email')
 param notification_email string
+
+@description('Azure Tenant ID')
+param azureTenantId string
+
+param workflows_appRegistrations_name string = 'appRegistrations'
+param connections_keyvault_externalid string = '/subscriptions/fb4e727e-f4b0-42b0-8950-8a4961a2bce9/resourceGroups/LogicApp-RG/providers/Microsoft.Web/connections/keyvault'
+param connections_acsemail_externalid string = '/subscriptions/fb4e727e-f4b0-42b0-8950-8a4961a2bce9/resourceGroups/LogicApp-RG/providers/Microsoft.Web/connections/acsemail'
+
 
 resource workflows_appRegistrations_name_resource 'Microsoft.Logic/workflows@2017-07-01' = {
   name: workflows_appRegistrations_name
